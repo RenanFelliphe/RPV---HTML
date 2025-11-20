@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --bg-color-green: green;
+    --bg-color-blue: blue;
+    --bg-color-blue2: blue;
+    --bg-color-red: red;
+    --bg-color-white: white;
+    --bg-color-black: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#flags {
+    width: 100vw;
+    height: 300px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flag {
+    position: relative  ;
+    width: 180px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(209, 209, 209);
+    overflow: visible;
+
+    p {
+        position: absolute;
+        bottom: -2em;
+    }
+}
+
+.flag > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color-white);
+}
+
+#japan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: var(--bg-color-red);
+    }
+}
+
+#italy {
+    display: flex;
+    justify-content: space-between;
+
+    #bar-right {
+        width: 60px;
+        height: 100%;
+        background-color: var(--bg-color-red);
+    }
+
+    #bar-left {
+        width: 60px;
+        height: 100%;
+        background-color: var(--bg-color-green);
+    }
+
+}
+
+#russia {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+    #bar-middle {
+        width: 100%;
+        height: 33px;
+        background-color: var(--bg-color-blue);
+    }
+
+    #bar-bottom {
+        width: 100%;
+        height: 33px;
+        background-color: var(--bg-color-red);
+    }
+}
+
+#norway {
+
+    background-color: var(--bg-color-blue);
+
+    #bar-vertical {
+        position: absolute;
+        left: 2.5rem;
+        width: 10px;
+        height: 100%;
+        background-color: var(--bg-color-red);
+    }
+
+    #bar-horizontal {
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--bg-color-red);
+    }
+
+    #bar-vertical-back {
+        position: absolute;
+        left: 2.05rem;
+        width: 25px;
+        height: 100%;
+        background-color: var(--bg-color-white);
+    }
+
+    #bar-horizontal-back {
+        position: absolute;
+        width: 100%;
+        height: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--bg-color-white);
+    }
+}
+
+#czech {
+    position: relative;
+
+    #bar-top {
+        width: 100%;
+        height: 50px;
+        background-color: var(--bg-color-white);
+    }
+
+    #bar-bottom {
+        width: 100%;
+        height: 50px;
+        background-color: var(--bg-color-red);
+    }
+
+    #triangle {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 60px solid var(--bg-color-blue2);
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+    }
+}
+
+#poland {
+    display: flex;
+    align-items: flex-end;
+    
+    #bar-bottom {
+        width: 100%;
+        height: 50px;
+        background-color: var(--bg-color-red);
+    }
+}
+
+#switzerland {
+    background-color: var(--bg-color-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #bar-1{
+        position: absolute;
+        width: 20px;
+        height: 60px;
+        background-color: var(--bg-color-white);
+    }
+    
+    #bar-2{
+        position: absolute;
+        height: 20px;
+        width: 60px;
+        background-color: var(--bg-color-white);
+    }
+}
+
+#lgbt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        width: 100%;
+        height: 20px;
+    }
+
+    #bar-1 {
+        background-color: red;
+    }
+
+    #bar-2 {
+        background-color: orange;
+    }
+
+    #bar-3 {
+        background-color: yellow;
+    }
+
+    #bar-4 {
+        background-color: green;
+    }
+
+    #bar-5 {
+        background-color: blue;
+    }
+
+    #bar-6 {
+        background-color: purple;
+    }
+
+}
